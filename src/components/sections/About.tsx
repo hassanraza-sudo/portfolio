@@ -155,7 +155,7 @@ const About: React.FC = () => {
               }`}
             >
               <img
-                src="/assets/hassan.jpg"
+                src="../assets/hassan.jpg"
                 alt="Hassan Raza"
                 className="w-full h-full object-cover"
               />
