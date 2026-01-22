@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
       image:
         "https://images.pexels.com/photos/301926/pexels-photo-301926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
-      liveLink: "https://example.com/school",
+      liveLink: "https://school-website-w3nv.vercel.app/",
       githubLink: "https://github.com/hassanraza-sudo/school-web",
       features: [
         "User authentication and role-based access control",
@@ -44,7 +44,7 @@ const Projects: React.FC = () => {
       image:
         "https://images.pexels.com/photos/267669/pexels-photo-267669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       technologies: ["React", "Redux", "Node.js", "Express", "PostgreSQL"],
-      liveLink: "https://example.com/studienhilfe",
+      liveLink: "https://www.studien-route.com/",
       githubLink: "https://github.com/hassanraza-sudo/Frontend-Consultancy",
       features: [
         "University search and filter functionality",
@@ -62,7 +62,7 @@ const Projects: React.FC = () => {
       image:
         "https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       technologies: ["React", "Node.js", "Socket.io", "MongoDB", "JWT"],
-      liveLink: "https://example.com/voting",
+      liveLink: "",
       githubLink: "https://github.com/hassanraza-sudo/Voting-System",
       features: [
         "Secure voter authentication",
@@ -70,6 +70,42 @@ const Projects: React.FC = () => {
         "Admin dashboard for election management",
         "Audit trails and vote verification",
         "Mobile-responsive design",
+      ],
+    },
+    {
+      id: 4,
+      title: "Daily Gold Rate",
+      description:
+        "A real-time gold price tracking website providing daily updated gold rates with a clean and user-friendly interface.",
+      image:
+        "https://images.pexels.com/photos/47047/gold-ingots-golden-treasure-47047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      technologies: ["React", "Next.js", "API Integration", "Tailwind CSS"],
+      liveLink: "https://www.dailygoldrate.com/",
+      githubLink: "https://github.com/hassanraza-sudo/Daily-Gold-Rates",
+      features: [
+        "Live gold rate updates",
+        "Country and city-based pricing",
+        "Responsive and fast-loading UI",
+        "SEO-friendly structure",
+        "Simple and clean design",
+      ],
+    },
+    {
+      id: 5,
+      title: "EstatePro",
+      description:
+        "A real estate property management system for listing properties, managing users, and scheduling appointments.",
+      image:
+        "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "JWT"],
+      liveLink: "",
+      githubLink: "https://github.com/hassanraza-sudo/EstatePro",
+      features: [
+        "Property listing and search",
+        "Role-based dashboards (Admin, Agent, Buyer)",
+        "Appointment scheduling system",
+        "Secure authentication and authorization",
+        "Responsive dashboard UI",
       ],
     },
   ];
@@ -220,13 +256,13 @@ const Projects: React.FC = () => {
 
       {/* Project Modal */}
       {activeProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-50 overflow-y-auto">
           <div
             className="absolute inset-0 bg-black bg-opacity-75"
             onClick={closeProjectModal}
           ></div>
           <div
-            className={`relative w-full max-w-4xl rounded-lg shadow-xl overflow-hidden ${
+            className={`relative mx-auto my-10 w-full max-w-4xl rounded-lg shadow-xl ${
               theme === "dark" ? "bg-gray-800" : "bg-white"
             }`}
           >
@@ -258,7 +294,7 @@ const Projects: React.FC = () => {
               </button>
             </div>
 
-            <div className="p-6 md:p-8">
+            <div className="p-6 md:p-8 max-h-[70vh] overflow-y-auto">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
                 <div>
                   <h3
