@@ -108,6 +108,33 @@ const Projects: React.FC = () => {
         "Responsive dashboard UI",
       ],
     },
+    {
+      id: 6,
+      title: "Cafe E-Wallet (FYP)",
+      description:
+        "A digital cafe payment and management system developed as a Final Year Project. The platform enables secure e-wallet transactions, order management, and efficient customer handling for cafe environments.",
+      image:
+        "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      technologies: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JWT",
+        "Tailwind CSS"
+      ],
+      liveLink: "",
+      githubLink: "https://github.com/AboubakarArisar/Cafe_EWallet",
+      features: [
+        "Secure digital wallet payment system",
+        "Cafe order and transaction management",
+        "User authentication and authorization",
+        "Responsive and user-friendly interface",
+        "Real-time balance and payment tracking",
+        "Admin management functionalities",
+        "Team-based Final Year Project collaboration"
+      ],
+    }
   ];
 
   const openProjectModal = (project: Project) => {
